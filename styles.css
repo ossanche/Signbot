@@ -1,0 +1,133 @@
+<!-- CSS STYLES -->
+
+* { box-sizing: border-box; }
+
+body {
+    background-color: #000000;
+    color: #ff0000;
+    font-family: monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#titulo-canvas {
+    display: block;
+    margin: 18px auto 14px auto;
+}
+
+.franja-gris {
+    background-color: rgba(85,85,85,0.34);
+    border-top: 3px solid #ff0000;
+    border-bottom: 3px solid #ff0000;
+    padding: 20px 0;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+.marco-led {
+    border: 2px solid #000000;
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.21);
+    padding: 2px;
+    display: inline-block;
+}
+
+canvas#matrizSignbot {
+    display: block;
+    background-color: #141a14;
+}
+
+.control-panel {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.input-text {
+    width: 80%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    color: #333;
+}
+
+.input-text::placeholder {
+    color: #aaa;
+}
+
+.opciones-ancho {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+.opciones-ancho label {
+    margin-right: 5px;
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 0;
+}
+
+.btn-generate {
+    background: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 100%);
+    border: 1px solid #777;
+    color: #000;
+    padding: 1px 15px;
+    font-size: 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.btn-generate:active {
+    background: #cccccc;
+}
+
+.btn-download {
+    background: linear-gradient(to bottom, #ff4444 0%, #cc0000 100%);
+    border: 1px solid #880000;
+    color: #fff;
+    padding: 1px 15px;
+    font-size: 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    display: none;
+}
+
+.btn-download:active {
+    background: #aa0000;
+}
+
+.gif-status {
+    color: #ff6666;
+    font-size: 13px;
+    margin-top: 10px;
+    min-height: 18px;
+    font-weight: bold;
+}
+
+.descripcion {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-top: 25px;
+    padding: 0 20px;
+    color: #ff0000;
+}
+
+.descripcion span {
+    color: #ffffff;
+}

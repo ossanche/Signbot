@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Signbot v2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="titulo-canvas"></canvas>
+
+<div class="franja-gris">
+    <div class="marco-led">
+        <canvas id="matrizSignbot"></canvas>
+    </div>
+</div>
+
+<div class="control-panel">
+    <input type="text" id="txtMensaje" class="input-text" placeholder="Write your text here" value="welcome to Signbot">
+
+    <div class="opciones-ancho">
+        Sign Width:&nbsp;
+        <input type="radio" name="width" id="small" value="160"> <label for="small">Small</label>
+        <input type="radio" name="width" id="medium" value="240" checked> <label for="medium">Medium</label>
+        <input type="radio" name="width" id="large" value="320"> <label for="large">Large</label>
+    </div>
+
+    <div class="btn-row">
+        <button type="button" id="btnGenerar" class="btn-generate">Generate Sign</button>
+        <button type="button" id="btnDownload" class="btn-download">Download GIF</button>
+    </div>
+    <div class="gif-status" id="gifStatus"></div>
+
+    <div class="descripcion">
+        Write some text and click <span>Generate Sign</span> to make your own animated scrolling text LED sign.
+    </div>
+</div>
+
+<script src="font.js"></script>
+<script src="signbot.js"></script>
+</body>
+</html>
+<!--___end___-->
